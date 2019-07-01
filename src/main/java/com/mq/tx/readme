@@ -1,0 +1,11 @@
+rabbitmq 
+	通过持久化,dureable来完成持久化,解决服务器数据丢失问题
+	
+	生产者发送消息后,不知道到mq服务器接受情况
+		
+		AMQP--事务机制
+		confirm模式
+	事务机制
+		Txselect 用于将当前channle设置为transaction模式
+		Txcommit 提交tx
+		txrollback	回滚tx
